@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS booknook_db;
+CREATE DATABSE booknook_db;
