@@ -16,7 +16,7 @@ Comment.init(
             allowNull: true,
         },
         body: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: true,
         }
     }, {
