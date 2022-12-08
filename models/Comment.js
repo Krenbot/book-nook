@@ -16,12 +16,15 @@ Comment.init(
             allowNull: true,
         },
         body: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: true,
         }
     }, {
     sequelize,
     timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'comment',
 })
 
 module.exports = Comment;

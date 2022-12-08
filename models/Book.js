@@ -19,14 +19,20 @@ Book.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        user_id: {
+        isbn: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        pages: {
             type: DataTypes.INTEGER,
-            references: {
-                model: 'user',
-                key: 'id',
-            },
+            allowNull: false,
         },
     }, {
     sequelize,
     timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'book'
 })
+
+module.exports = Book;

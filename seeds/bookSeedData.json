@@ -1,0 +1,62 @@
+[
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "isbn": "0743273567",
+        "pages": 180
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "isbn": "9780060933272",
+        "pages": 336
+    },
+    {
+        "title": "Lord of the Flies",
+        "author": "William Golding",
+        "isbn": "9780399501487",
+        "pages": 182
+    },
+    {
+        "title": "Of Mice and Men",
+        "author": "John Steinbeck",
+        "isbn": "9780141185101",
+        "pages": 112
+    },
+    {
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "isbn": "9788129116123",
+        "pages": 141
+    },
+    {
+        "title": "The Odyssey",
+        "author": "Homer",
+        "isbn": "9780140268867",
+        "pages": 541
+    },
+    {
+        "title": "The Adventures of Huckleberry Finn",
+        "author": "Mark Twain",
+        "isbn": "1580495834",
+        "pages": 327
+    },
+    {
+        "title": "Frankenstein",
+        "author": "Mary Wollstonecraft Shelley",
+        "isbn": "9780486282114",
+        "pages": 260
+    },
+    {
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "isbn": "9781602833364",
+        "pages": 268
+    },
+    {
+        "title": "Jane Eyre",
+        "author": "Charlotte Brontë",
+        "isbn": "9781451673319",
+        "pages": 532
+    }
+]
