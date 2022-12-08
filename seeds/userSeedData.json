@@ -1,27 +1,27 @@
 [
     {
-        "name": "",
-        "email": "",
-        "password": ""
+        "name": "Steve",
+        "email": "steve@test.com",
+        "password": "password"
     },
     {
-        "name": "",
-        "email": "",
-        "password": ""
+        "name": "Jeremy",
+        "email": "jeremy@test.com",
+        "password": "password"
     },
     {
-        "name": "",
-        "email": "",
-        "password": ""
+        "name": "Henry",
+        "email": "henry@test.com",
+        "password": "password"
     },
     {
-        "name": "",
-        "email": "",
-        "password": ""
+        "name": "Alan",
+        "email": "alan@test.com",
+        "password": "password"
     },
     {
-        "name": "",
-        "email": "",
-        "password": ""
+        "name": "Kevin",
+        "email": "kevin@test.com",
+        "password": "password"
     }
 ]
