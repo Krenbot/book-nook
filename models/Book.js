@@ -34,3 +34,5 @@ Book.init(
     underscored: true,
     modelName: 'book'
 })
+
+module.exports = Book;
