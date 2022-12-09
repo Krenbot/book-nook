@@ -15,7 +15,7 @@ Review.init(
             type: DataTypes.TEXT,
             allowNull: false,
         },
-        bookId: {
+        book_id: {
             type: DataTypes.INTEGER,
             allowNull: false
         }
