@@ -16,14 +16,21 @@ app.use(express.json())
 app.get("/", async(req,res)=>{
     const books = await Book.findAll()
     const serializedBooks = books.map((book)=>book.get({plain:true}))
-    console.log(serializedBooks)
 
     res.render("home",{"title":serializedBooks})
 })
 
 app.get("/bookview/:id", async(req,res)=>{
     const selectedBook = await Book.findByPk(req.params.id)
-    res.render("individualBook",selectedBook.get({plain:true}))
+    const selectedBookReviews = await Review.findAll({
+        where: {
+            book_id: selectedBook.id
+        }
+    })
+    const serializedReviews = selectedBookReviews.map((review)=>
+        review.get({plain:true})
+    )
+    res.render("individualBook",{"selectedBook":selectedBook.get({plain:true}),serializedReviews})
 })
 app.get("/login", (req,res)=>{
     res.render("login")
