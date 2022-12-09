@@ -1,15 +1,30 @@
 const router = require('express').Router();
 const { Book, Comment, Review, User } = require('../models')
-const withAuth = require('..utils/auth');
+const withAuth = require('../utils/auth');
+
+
+
 
 router.get('/book/:id', async (req, res) => {
     try {
       const bookData = await book.findByPk(req.params.id, {
         include: [
           {
-            model: User,
-            attributes: ['name'],
+            model: Book,
           },
+          {
+            model: Review,
+            include: [
+                User
+            ]
+          }, 
+          {
+            model: Comment,
+            include: [
+                User
+            ]
+          }
+        
         ],
       });
   
