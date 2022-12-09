@@ -1,10 +1,24 @@
+<div style="padding-top:10px;">
+</div>
 <div class="container">
     <div class="card bg-light" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">{{title}}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{author}}</h6>
-    <h7 class="card-subtitle mb-2 text-muted">{{isbn}}</h6>
-    <h7 class="card-subtitle mb-2 text-muted">{{pages}}</h6>
+    <h5 class="card-title">{{selectedBook.title}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{selectedBook.author}}</h6>
+    <h7 class="card-subtitle mb-2 text-muted">ISBN: {{selectedBook.isbn}}</h6><br>
+    <h7 class="card-subtitle mb-2 text-muted">Pages: {{selectedBook.pages}}</h6>
+  </div>
+  <hr/>
+<div class="container">
+    <h5>Reviews</h5>
+  </div>
+  <div class="card bg-light" style="width:auto"> 
+    <div class="card-body">
+      <h5 class="card-title">{{selectedBook.title}}</h5>
+      {{#each serializedReviews}}
+      <h6 class="card-subtitle mb-2 text-muted" style="font-size: small;">{{body}}</h6>
+      {{/each}}
+    </div>
   </div>
 </div>
 </div>

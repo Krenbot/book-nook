@@ -1,9 +1,9 @@
 require('dotenv').config();
-const {Sequelize} = require('sequelize');
+const { Sequelize } = require('sequelize');
 
 
 let sequelize;
-console.log(process.env)
+
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
@@ -13,7 +13,9 @@ if (process.env.JAWSDB_URL) {
     process.env.DB_PASSWORD,
     {
       host: 'localhost',
-      dialect: 'mysql'
+      dialect: 'mysql',
+      //Disables seed logging
+      logging: false
     }
   );
 }

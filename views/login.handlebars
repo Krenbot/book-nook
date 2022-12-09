@@ -1,32 +1,38 @@
+{{!-- LOGIN HANDLING --}}
 <div class="container">
     <div class="container">
-    <form class="w-50">
-    <h3>Login</h3>
-    <div class="mb-3">
-        <label for="loginUsername" class="form-label">Username</label>
-        <input type="text" class="form-control">
+        <form class="w-50 login-form">
+            <h3>Login</h3>
+            <div class="mb-3">
+                <label for="loginUsername" class="form-label">Username</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input type="password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
-    <div class="mb-3">
-        <label for="loginPassword" class="form-label">Password</label>
-        <input type="password" class="form-control">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-    </div>
-    <hr/>
+    <hr />
 
+    {{!-- SIGNUP HANDLING --}}
     <div class="container">
-    <form class="w-50">
-    <h3>Signup</h3>
-    <div class="mb-3">
-        <label for="loginUsername" class="form-label">Username</label>
-        <input type="text" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label for="loginPassword" class="form-label">Password</label>
-        <input type="password" class="form-control">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+        <form class="w-50 signup-form">
+            <h3>Signup</h3>
+            <div class="mb-3">
+                <label for="signupUsername" class="form-label">Username</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="signupEmail" class="form-label">Email</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="signupPassword" class="form-label">Password</label>
+                <input type="password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 </div>

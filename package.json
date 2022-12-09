@@ -1,7 +1,7 @@
 {
   "name": "book-nook",
   "version": "1.0.0",
-  "description": "Interactive Full-Stack Project\r Projects play a key role in your journey to becoming a full-stack web developer. As you enter the last phase of the boot camp, you’ll begin to apply for development jobs. If you want to land interviews, your portfolio must feature high-quality deployed examples of your work—and you can use your finished projects for that very purpose.",
+  "description": "A bibliophile's dream app to help categorize books you love and trash books you don't.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
