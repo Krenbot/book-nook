@@ -20,9 +20,15 @@ app.get("/", async(req,res)=>{
 
     res.render("home",{"title":serializedBooks})
 })
+
+app.get("/bookview/:id", async(req,res)=>{
+    const selectedBook = await Book.findByPk(req.params.id)
+    res.render("individualBook",selectedBook.get({plain:true}))
+})
 app.get("/login", (req,res)=>{
     res.render("login")
 })
+
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
