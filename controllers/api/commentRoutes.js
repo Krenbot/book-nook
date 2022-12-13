@@ -1,11 +1,16 @@
 const router = require('express').Router();
-const { Comment } = require('../../models/Comment');
+const e = require('express')
+const { Comment, Review, Book, User } = require('../../models/');
 
 
 //GET all comments
 router.get('/', async (req, res) => {
     try {
-        const comment = await Comment.findByPk(req.params.id);
+        const comment = await Comment.findAll({
+            include: [{ model: Comment }, { model: Review }],
+        });
+        res.json(comment);
+
         if (!comment) {
             res.status(404).json({ message: 'No COMMENTS found!' });
             return;
@@ -20,6 +25,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const comment = await Comment.findByPk(req.params.id);
+
         if (!comment) {
             res.status(404).json({ message: 'No COMMENT with this ID!' });
             return;
@@ -31,6 +37,14 @@ router.get('/:id', async (req, res) => {
 });
 
 //POST a comment
+router.post('/', async (req, res) => {
+    try {
+        const comment = await Comment.create(req.body)
+        res.json(comment)
+    } catch (err) {
+        res.status(500).json(err)
+    }
+});
 
 //UPDATE a comment
 router.put('/:id', async (req, res) => {
@@ -40,6 +54,7 @@ router.put('/:id', async (req, res) => {
                 id: req.params.id,
             },
         });
+
         if (!comment[0]) {
             res.status(404).json({ message: 'No COMMENT with this ID!' });
             return;
@@ -58,11 +73,12 @@ router.delete('/:id', async (req, res) => {
                 id: req.params.id,
             },
         });
+
         if (!comment) {
             res.status(404).json({ message: 'No COMMENT with this ID!' });
             return;
         }
-        res.status(200).json(userData);
+        res.status(200).json(comment);
     } catch (err) {
         res.status(500).json(err);
     }
