@@ -39,7 +39,6 @@ router.get('/book/:id', async (req, res) => {
   }
 });
 
-
 router.get('/home', withAuth, async (req, res) => {
   try {
 

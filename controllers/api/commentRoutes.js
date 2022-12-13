@@ -2,7 +2,6 @@ const router = require('express').Router();
 const e = require('express')
 const { Comment, Review, Book, User } = require('../../models/');
 
-
 //GET all comments
 router.get('/', async (req, res) => {
     try {
