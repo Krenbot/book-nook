@@ -15,7 +15,6 @@ if (process.env.JAWSDB_URL) {
       host: 'localhost',
       dialect: 'mysql',
       //Disables seed logging
-      logging: false
     }
   );
 }

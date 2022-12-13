@@ -16,6 +16,7 @@ app.use(session({secret: 'anystringoftext',
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');
+
 app.use(express.static(path.join(__dirname,'public')))
 app.use(express.json())
 
@@ -40,6 +41,11 @@ app.get("/bookview/:id", async(req,res)=>{
 })
 app.get("/login", (req,res)=>{
     res.render("login")
+})
+
+app.get("/bookview/:id/newReview", async(req,res)=>{
+    const newReviewBook = await Book.findByPk(req.params.id)
+    res.render("newReview",{title: newReviewBook.title})
 })
 
 
