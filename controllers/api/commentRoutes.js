@@ -7,7 +7,7 @@ const { Comment, Review, Book, User } = require('../../models/');
 router.get('/', async (req, res) => {
     try {
         const comment = await Comment.findAll({
-            include: [{ model: Comment }, { model: Review }],
+            include: [{ model: Book }],
         });
         res.json(comment);
 
@@ -24,7 +24,12 @@ router.get('/', async (req, res) => {
 //GET a comment
 router.get('/:id', async (req, res) => {
     try {
-        const comment = await Comment.findByPk(req.params.id);
+        const comment = await Comment.findOne({
+            where: {
+                id: req.params.id
+            },
+            include: [{ model: Book }]
+        })
 
         if (!comment) {
             res.status(404).json({ message: 'No COMMENT with this ID!' });
@@ -36,7 +41,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-//POST a comment
+//CREATE a new comment
 router.post('/', async (req, res) => {
     try {
         const comment = await Comment.create(req.body)
@@ -83,3 +88,5 @@ router.delete('/:id', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+module.exports = router;
