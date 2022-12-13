@@ -2,43 +2,39 @@ const router = require('express').Router();
 const { Book, Comment, Review, User } = require('../models')
 const withAuth = require('../utils/auth');
 
-
-
-
-
 router.get('/book/:id', async (req, res) => {
-    try {
-      const bookData = await book.findByPk(req.params.id, {
-        include: [
-          {
-            model: Book,
-          },
-          {
-            model: Review,
-            include: [
-                User
-            ]
-          }, 
-          {
-            model: Comment,
-            include: [
-                User
-            ]
-          }
-        
-        ],
-      });
-  
-      const book = bookData.get({ plain: true });
-  
-      res.render('book', {
-        ...book,
-        logged_in: req.session.logged_in
-      });
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
+  try {
+    const bookData = await book.findByPk(req.params.id, {
+      include: [
+        {
+          model: Book,
+        },
+        {
+          model: Review,
+          include: [
+            User
+          ]
+        },
+        {
+          model: Comment,
+          include: [
+            User
+          ]
+        }
+
+      ],
+    });
+
+    const book = bookData.get({ plain: true });
+
+    res.render('book', {
+      ...book,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 
 router.get('/home', withAuth, async (req, res) => {
