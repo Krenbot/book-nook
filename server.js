@@ -6,11 +6,16 @@ const {Book,Comment,Review,User}= require("./models")
 const { engine } = require('express-handlebars')
 const app = express()
 const PORT = process.env.PORT || 3001
+const cookieParser = require('cookie-parser');
 
+
+app.use(cookieParser());
+app.use(session({secret: 'anystringoftext', 
+                saveUninitialized: true,
+                resave: true}));
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');
-
 
 app.use(express.static(path.join(__dirname,'public')))
 app.use(express.json())
