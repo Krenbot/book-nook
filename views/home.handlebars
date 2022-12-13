@@ -1,14 +1,13 @@
 {{!-- TODO: IF LOGGED IN SHOW SHELF, OTHERWISE SHOW LOGIN --}}
 
 <div class="container">
-    <h2>homepage</h2>
+    <h2>home</h2>
     <hr />
     <div class="container-sm">
         <div class="container" id="shelf-container">
             <div class="card" style="width: auto;">
                 <h5 class="card-title">Your Shelf</h5>
                 <div class="container-md" style="flex-box">
-                    <h3>books go here</h3>
                     {{#each title}}
                     <div class="card-container">
                         <a href="/bookview/{{this.id}}">{{this.title}}</a>
@@ -25,10 +24,9 @@
     <hr />
     <div class="container-sm">
         <div class="container" id="shelf-container">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: auto;">
                 <h5 class="card-title">Future Reads</h5>
                 <div class="container-md">
-                    <h3>books go here</h3>
                     <button type="button" class="btn btn-primary">Add a book</button>
                     <button type="button" class="btn btn-danger">Delete a book</button>
                 </div>

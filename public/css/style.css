@@ -1,7 +1,8 @@
 .card-container {
     background-color: burlywood;
-    margin: 3px;
-    padding: 3px;
+    margin: 5px;
+    margin-bottom: 8px;
+    margin-top: 15px;
     width: 150px;
     height: 300px;
     text-align: center; 
@@ -9,7 +10,32 @@
     border-radius: 3px;
     cursor: pointer;
     border: 2px rgba(0, 0, 0, 0.554) solid;
-    
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.container-md button {
+    margin: 5px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    width: 150px;
+    height: 300px;
+}
+
+.card-container a {
+    text-decoration: none;
+    margin: 4px;
+    color: black;
+    font-weight: 600;
+    display: block;
+    height: 300px;
+    padding-top: 50%;
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .card-container:hover {
@@ -21,6 +47,52 @@
 
 .container-md {
     display: flex;
+    background-image: url(https://img.freepik.com/free-vector/wooden-wall-floor-with-aged-surface-realistic_107791-682.jpg?w=996&t=st=1670898645~exp=1670899245~hmac=cf6f9a7e36bcd00cb2c54697d898e9c5e4711d44b68c8d69993d6017e635dce4);
+    background-position: bottom center;
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /* height: 400px; */
+    bottom: 0;
+}
+
+.card-title {
+    text-align: center;
+    font-family: 'Carattere', cursive;
+    font-size: 60px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: burlywood;
+}
+.card {
+    background-color: rgba(43, 28, 4, 0.75);
+}
+
+.card-container a {
+    justify-content: center;
+}
+
+.navbar {
+    /* background-color: rgb(78, 50, 9); */
+    background-image: url(https://img.freepik.com/premium-photo/texture-old-leather_141856-489.jpg?w=2000);
+    background-position: center center;
+    height: 65px;
+    border-top: 5px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+    color: #F0EAD6;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 800;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-photo/vintage-grungy-textured-paper-background_53876-103932.jpg?w=2000);
 }
 
 
