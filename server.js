@@ -37,7 +37,7 @@ app.get("/login", (req,res)=>{
 })
 
 
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: false}).then(() => {
     app.listen(PORT, () => {
         console.log(`server listening @ http://localhost:${PORT}`)
     })
