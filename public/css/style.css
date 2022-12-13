@@ -99,3 +99,52 @@ body {
 
 
 
+.splash{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title {
+    position: relative;
+    font-weight: 300;
+    font-size: 9em;
+    color: #402d2d;
+    justify-content: center;
+    font-family: 'Cinzel Decorative', cursive;
+    
+  }
+  
+  .title .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  .title .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #402d2d;
+    transform-origin: 0.5 0;
+  }
+  
+  .title .ampersand {
+    font-family: 'Carattere', cursive;
+    font-style: bold;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .title .letters {
+    display: inline-block;
+    opacity: 0;
+  }
