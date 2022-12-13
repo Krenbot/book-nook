@@ -4,6 +4,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/book/:id', async (req, res) => {
   try {
+    //Get Book by ID and JOIN with user data
     const bookData = await book.findByPk(req.params.id, {
       include: [
         {
@@ -25,8 +26,10 @@ router.get('/book/:id', async (req, res) => {
       ],
     });
 
+    // Serialize data so the template can read it
     const book = bookData.get({ plain: true });
 
+    // Pass serialized data and session flag into template
     res.render('book', {
       ...book,
       logged_in: req.session.logged_in
@@ -57,7 +60,7 @@ router.get('/home', withAuth, async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-
+  // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
     res.redirect('/home');
     return;
