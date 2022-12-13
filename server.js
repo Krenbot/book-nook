@@ -1,5 +1,6 @@
 const sequelize = require('./config/connection')
 const express = require('express')
+const session = require("express-session")
 const path = require("path")
 const {Book,Comment,Review,User}= require("./models")
 const { engine } = require('express-handlebars')
