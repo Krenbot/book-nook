@@ -4,7 +4,7 @@
     margin-bottom: 8px;
     margin-top: 15px;
     width: 150px;
-    height: 300px;
+    height: 485px;
     text-align: center; 
     line-height: 30px;
     border-radius: 3px;
@@ -47,12 +47,13 @@ h2 {
 
 .container-md {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-image: url(https://img.freepik.com/free-vector/wooden-wall-floor-with-aged-surface-realistic_107791-682.jpg?w=996&t=st=1670898645~exp=1670899245~hmac=cf6f9a7e36bcd00cb2c54697d898e9c5e4711d44b68c8d69993d6017e635dce4);
     background-position: bottom center;
     padding: 5px;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    /* height: 400px; */
     bottom: 0;
 }
 
