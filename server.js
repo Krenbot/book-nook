@@ -16,6 +16,7 @@ app.use(express.json())
 
 app.get("/", async (req, res) => {
     const books = await Book.findAll()
+
     const serializedBooks = books.map((book) => book.get({ plain: true }))
 
     res.render("home", { "title": serializedBooks })
@@ -23,14 +24,22 @@ app.get("/", async (req, res) => {
 
 app.get("/bookview/:id", async (req, res) => {
     const selectedBook = await Book.findByPk(req.params.id)
+
+    if (!selectedBook) {
+        res.status(404).json({ message: 'No BOOKS found!' });
+        return;
+    }
+
     const selectedBookReviews = await Review.findAll({
         where: {
             book_id: selectedBook.id
-        }
+        },
     })
+
     const serializedReviews = selectedBookReviews.map((review) =>
         review.get({ plain: true })
     )
+
     res.render("individualBook", { "selectedBook": selectedBook.get({ plain: true }), serializedReviews })
 })
 
@@ -38,10 +47,8 @@ app.get("/login", (req, res) => {
     res.render("login")
 })
 
-
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
         console.log(`server listening @ http://localhost:${PORT}`)
     })
 })
-
