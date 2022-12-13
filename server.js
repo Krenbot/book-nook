@@ -7,6 +7,7 @@ const { engine } = require('express-handlebars')
 const app = express()
 const PORT = process.env.PORT || 3001
 const cookieParser = require('cookie-parser');
+const controllers = require('./controllers')
 
 app.use(cookieParser());
 app.use(session({
@@ -17,7 +18,7 @@ app.use(session({
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');
-app.use(routes);
+app.use(controllers);
 
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.json())
