@@ -1,3 +1,5 @@
+
+// logo animation
 anime.timeline({loop: true})
   .add({
     targets: '.title .line',
@@ -11,7 +13,7 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
   }).add({
-    targets: '.title .ampersand',
+    targets: '.title .symbol',
     opacity: [0,1],
     scaleY: [0.5, 1],
     easing: "easeOutExpo",

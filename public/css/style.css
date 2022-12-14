@@ -1,16 +1,48 @@
+/* main page css */
+
+/* book styling*/
 .card-container {
-    background-color: burlywood;
+    background-image: radial-gradient( ellipse at top, rgb(70, 23, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://img.freepik.com/free-photo/original-brown-leather-texture-background_24972-1605.jpg?w=1480&t=st=1671001700~exp=1671002300~hmac=999ae93390cc3fcffd9458739ee32a285f335ac3708559c53b8d983059e98ff5');
     margin: 5px;
     margin-bottom: 8px;
     margin-top: 15px;
-    width: 150px;
+    width: auto;
+    min-width: 15vw;
+    max-width: 20vw;
     height: 485px;
     text-align: center; 
     line-height: 30px;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
     border: 2px rgba(0, 0, 0, 0.554) solid;
     font-family: 'Cinzel Decorative', cursive;
+}
+
+/* button styling*/
+.btn {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+button:active {
+    background-color: rgba(222, 184, 135, 0.75);
+}
+
+.btn-primary {
+    background-color: rgb(25, 70, 0, 0.75);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(25, 70, 0, 0.9);
+}
+
+.btn-danger {
+    background-color: rgba(98, 0, 0, 0.75);
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: rgba(98, 0, 0, 0.9);
 }
 
 .container-md button {
@@ -18,17 +50,20 @@
     margin-bottom: 8px;
     margin-top: 15px;
     width: 150px;
-    height: 300px;
+    height: 485px;
 }
 
 .card-container a {
     text-decoration: none;
-    margin: 4px;
-    color: black;
+    margin: 10px;
+    color: rgb(125, 94, 14, 0.90);
     font-weight: 600;
     display: block;
-    height: 485px;
+    height: 460px;
     padding-top: 50%;
+    border-top: 2px solid rgb(125, 94, 14, 0.90);
+    border-bottom: 2px solid rgb(125, 94, 14, 0.90);
+    border-radius: 5px;
 }
 
 h2 {
@@ -62,34 +97,66 @@ h2 {
     font-family: 'Carattere', cursive;
     font-size: 60px;
     margin-top: 5px;
+    margin-bottom: 20px;
     padding: 5px;
-    background-color: burlywood;
+    background-image: url(https://img.freepik.com/free-photo/grungy-beige-marble-textured-background_53876-124564.jpg?w=1480&t=st=1670998980~exp=1670999580~hmac=a2263043a9bb86c42db39bd26601d87b4033fc7eeced8f1d51dba0ddcb4a24b1);
+    opacity: 0.75;
+    border: 3px silver solid;
+    background-position: bottom center;
+    background-size: cover;
+    border-radius: 5px;
+    filter: drop-shadow(10px 10px 10px black);
+
+
 }
 .card {
-    background-color: rgba(43, 28, 4, 0.75);
+    background-image: url(https://img.freepik.com/free-photo/brown-wooden-textured-flooring-background_53876-101851.jpg?w=1480&t=st=1671000142~exp=1671000742~hmac=d6191731a21e47b3055066fb817553f297b498a22de99f3826a6445365db477e);
 }
 
 .card-container a {
     justify-content: center;
 }
 
+/* navbar styling */
 .navbar {
-    /* background-color: rgb(78, 50, 9); */
     background-image: url(https://img.freepik.com/premium-photo/texture-old-leather_141856-489.jpg?w=2000);
     background-position: center center;
-    height: 65px;
+    height: 15vh;
     border-top: 5px solid rgba(0, 0, 0, 0.5);
     border-bottom: 5px solid rgba(0, 0, 0, 0.5);
 }
 
 .nav-link {
-    color: #F0EAD6;
+    color: #402d2d;
     font-family: 'Cinzel Decorative', cursive;
-    font-weight: 800;
+    font-weight: 900;
+    transition: box-shadow background-color 1s ;
+    border: 3px #402d2d65 solid;
+    border-radius: 7px;
+    padding: 1.5vh;
+
+}
+
+.nav-link:hover {
+    background-color: #2d2d2d55;
+    color: rgba(214, 193, 165, 0.654);
+
 }
 
 .navbar-brand {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #402d2d;
+    padding-top: 0px;
+    border: none;
+    
+}
+
+.navbar-brand:hover {
+    color: #362626;
+    box-shadow: 10px black;
+    background-color: rgba(255, 255, 255, 0);
+    
 }
 
 body {
@@ -98,7 +165,7 @@ body {
 
 
 
-
+/* logo css */
 .splash{
     text-align: center;
     margin-top: 20px;
@@ -107,7 +174,7 @@ body {
 .title {
     position: relative;
     font-weight: 300;
-    font-size: 9em;
+    font-size: 10vw;
     color: #402d2d;
     justify-content: center;
     font-family: 'Cinzel Decorative', cursive;
@@ -136,7 +203,7 @@ body {
     transform-origin: 0.5 0;
   }
   
-  .title .ampersand {
+  .title .symbol {
     font-family: 'Carattere', cursive;
     font-style: bold;
     font-weight: 400;
@@ -149,3 +216,32 @@ body {
     display: inline-block;
     opacity: 0;
   }
+
+
+  /* book view css */
+
+  /* cover styling */
+.cover-image {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    margin-top: 10vh;
+    margin-bottom: 80px;
+    filter: drop-shadow(10px 10px 75px black);
+}
+
+.cover-bg {
+    background-image: url(https://img.freepik.com/free-photo/cracked-wood-with-dark-background_1219-13.jpg?1&w=1480&t=st=1670997403~exp=1670998003~hmac=5852bf0e70d50582bdcc7bcbf61786ca85305cfbcaa91abdac8f43c781801c87);
+    filter: drop-shadow(10px 10px 20px black);
+}
+
+/* comments styling */
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+.comments-heading {
+    margin: 25px;
+}
