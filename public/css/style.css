@@ -21,6 +21,7 @@
 /* button styling*/
 .btn {
     font-family: 'Cinzel Decorative', cursive;
+    max-width: 50vw;
 }
 
 button:active {
@@ -30,6 +31,7 @@ button:active {
 .btn-primary {
     background-color: rgb(25, 70, 0, 0.75);
     border: none;
+    --bs-btn-active-bg: rgb(25, 70, 0);
 }
 
 .btn-primary:hover {
@@ -39,6 +41,7 @@ button:active {
 .btn-danger {
     background-color: rgba(98, 0, 0, 0.75);
     border: none;
+    --bs-btn-active-bg: rgba(98, 0, 0);
 }
 
 .btn-danger:hover {
@@ -240,8 +243,38 @@ body {
     display: flex;
     flex-direction: column;
     filter: drop-shadow(10px 10px 10px black);
+    align-items: center;
+
 }
 
 .comments-heading {
     margin: 25px;
+    width: 200px;
+}
+
+.comments-card {
+    width: 75vw;
+}
+
+form {
+    font-family: 'Cinzel Decorative', cursive;;
+}
+
+.heading {
+   font-family: 'Carattere', cursive;
+   font-size: 80px;
+   text-align: center;
+   margin-top: 30px;
+}
+
+.reviews-container {
+    color: rgba(222, 184, 135, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.reviews-container h2 {
+    filter: drop-shadow(5px 5px 10px rgba(222, 184, 135, 0.5));
 }
