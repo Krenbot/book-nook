@@ -278,3 +278,10 @@ form {
 .reviews-container h2 {
     filter: drop-shadow(5px 5px 10px rgba(222, 184, 135, 0.5));
 }
+
+.book-detail {
+    padding: 10px;
+    width: fit-content;
+    border-top: 3px rgba(192, 192, 192, 0.75) solid;
+    border-bottom: 3px rgba(192, 192, 192, 0.75) solid;
+}
