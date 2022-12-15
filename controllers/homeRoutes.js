@@ -28,8 +28,6 @@ router.get('/book/:id', async (req, res) => {
       ],
     });
 
-    console.log(bookData)
-
     // Serialize data so the template can read it
     const book = bookData.get({ plain: true });
 
@@ -55,7 +53,6 @@ router.get('/home', withAuth, async (req, res) => {
     });
 
     const user = userData.get({ plain: true });
-    console.log(user)
     res.render('home', {
       ...user,
       logged_in: true
