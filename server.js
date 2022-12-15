@@ -18,10 +18,12 @@ app.use(session({
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 // app.set('views', './views');
-app.use(controllers);
+/////////////// PUT OWN ROUTES AFTER EXPRESS MIDDLEWARE
+//IMPORTS > CONFIG/MIDDLEWARE > ROUTES
+app.use(express.json())
 
 app.use(express.static(path.join(__dirname, 'public')))
-app.use(express.json())
+app.use(controllers);
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
