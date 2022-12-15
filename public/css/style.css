@@ -56,6 +56,7 @@ button:active {
     height: 485px;
 }
 
+/* link styling */
 .card-container a {
     text-decoration: none;
     margin: 10px;
@@ -67,8 +68,10 @@ button:active {
     border-top: 2px solid rgb(125, 94, 14, 0.90);
     border-bottom: 2px solid rgb(125, 94, 14, 0.90);
     border-radius: 5px;
+    justify-content: center;
 }
 
+/* heading styling */
 h2 {
     font-family: 'Cinzel Decorative', cursive;
     font-weight: 600;
@@ -111,14 +114,11 @@ h2 {
 
 
 }
+
 /* dark wood bg */
 .card {
     background-image: url(https://img.freepik.com/free-photo/brown-wooden-textured-flooring-background_53876-101851.jpg?w=1480&t=st=1671000142~exp=1671000742~hmac=d6191731a21e47b3055066fb817553f297b498a22de99f3826a6445365db477e);
     filter: drop-shadow(10px 10px 10px black);
-}
-
-.card-container a {
-    justify-content: center;
 }
 
 /* navbar styling */
@@ -148,10 +148,9 @@ h2 {
 }
 
 .navbar-brand {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 900;
     color: #402d2d;
-    padding-top: 0px;
     border: none;
     
 }
@@ -178,7 +177,7 @@ body {
 .title {
     position: relative;
     font-weight: 300;
-    font-size: 10vw;
+    font-size: 9.5vw;
     color: #402d2d;
     justify-content: center;
     font-family: 'Cinzel Decorative', cursive;

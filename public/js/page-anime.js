@@ -41,6 +41,7 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
+  
   // book animation
 
   const bookEl = document.querySelectorAll('.card-container')
@@ -74,10 +75,6 @@ anime.timeline({loop: true})
       leaveButton(e.target)
     }, false);  
   }
-
-
-
-
 
 
 module.exports = userAnime
