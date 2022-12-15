@@ -14,7 +14,11 @@
       <div class="container-fluid">
         <a class="navbar-brand nav-link" href="/">B||N</a>
         <div class="navbar-nav">
+          {{#if logged_in}}
+          <button class="nav-link" id="logout">logout</button>
+          {{else}}
           <a class="nav-link" href="/login">login</a>
+          {{/if}}
         </div>
       </div>
     </nav>
@@ -22,5 +26,11 @@
 
 <script src="js/anime.min.js"></script>
 <script src="js/page-anime.js"></script>
+
+{{#if logged_in}}
+<script src="/js/logout.js"></script>
+{{/if}}
+
+
   </body>
 </html>
