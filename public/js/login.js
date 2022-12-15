@@ -15,7 +15,7 @@ const loginFormHandler = async (event) => {
 
         if (response.ok) {
             // If successful, redirect the browser to the profile page
-            document.location.replace('/');
+            document.location.replace('/home');
         } else {
             alert(response.statusText);
         }
@@ -25,7 +25,7 @@ const loginFormHandler = async (event) => {
 const signupFormHandler = async (event) => {
     event.preventDefault();
 
-    const name = document.querySelector('#signupName').value.trim();
+    const name = document.querySelector('#signupUsername').value.trim();
     const email = document.querySelector('#signupEmail').value.trim();
     const password = document.querySelector('#signupPassword').value.trim();
 
@@ -37,7 +37,7 @@ const signupFormHandler = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace('/');
+            document.location.replace('/home');
         } else {
             alert(response.statusText);
         }

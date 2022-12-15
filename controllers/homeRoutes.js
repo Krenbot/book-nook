@@ -1,6 +1,11 @@
 const router = require('express').Router();
+const { response } = require('express');
 const { Book, Comment, Review, User } = require('../models')
 const withAuth = require('../utils/auth');
+
+router.get('/', (req, res) => {
+  res.redirect('/login')
+})
 
 router.get('/book/:id', async (req, res) => {
   try {
@@ -40,11 +45,10 @@ router.get('/book/:id', async (req, res) => {
 });
 
 router.get('/home', withAuth, async (req, res) => {
-  try {
 
+  try {
     const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      attributes: { exclude: ['password'] }
     });
 
     const user = userData.get({ plain: true });
@@ -54,6 +58,7 @@ router.get('/home', withAuth, async (req, res) => {
       logged_in: true
     });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
