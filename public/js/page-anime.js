@@ -75,6 +75,5 @@ anime.timeline({loop: true})
       leaveButton(e.target)
     }, false);  
   }
-
-
+  
 module.exports = userAnime
