@@ -76,13 +76,7 @@ h2 {
     text-align: center;
 }
 
-.card-container:hover {
-    box-shadow: 0 0.5rem 3rem -0.5rem rgba(0, 0, 0, 0.4);
-    z-index: 10;
-    margin-top: -15px;
-    transform: scale(1.03, 1.03);
-}
-
+/* shelf bg */
 .container-md {
     display: flex;
     flex-wrap: wrap;
@@ -93,14 +87,16 @@ h2 {
     padding-bottom: 10px;
     margin-bottom: 10px;
     bottom: 0;
-    filter: drop-shadow(10px 10px 10px black);
+    
 }
 
+/* shelf heading */
 .card-title {
     text-align: center;
     font-family: 'Carattere', cursive;
     font-size: 60px;
-    margin-top: 5px;
+    margin: auto;
+    margin-top: 10px;
     margin-bottom: 20px;
     padding: 5px;
     background-image: url(https://img.freepik.com/free-photo/grungy-beige-marble-textured-background_53876-124564.jpg?w=1480&t=st=1670998980~exp=1670999580~hmac=a2263043a9bb86c42db39bd26601d87b4033fc7eeced8f1d51dba0ddcb4a24b1);
@@ -109,12 +105,16 @@ h2 {
     background-position: bottom center;
     background-size: cover;
     border-radius: 5px;
-    filter: drop-shadow(10px 10px 10px black);
+    width: 90%;
+
+
 
 
 }
+/* dark wood bg */
 .card {
     background-image: url(https://img.freepik.com/free-photo/brown-wooden-textured-flooring-background_53876-101851.jpg?w=1480&t=st=1671000142~exp=1671000742~hmac=d6191731a21e47b3055066fb817553f297b498a22de99f3826a6445365db477e);
+    filter: drop-shadow(10px 10px 10px black);
 }
 
 .card-container a {
@@ -228,8 +228,8 @@ body {
 .cover-image {
     display: flex;
     justify-content: space-around;
-    height: 100vh;
-    margin-top: 10vh;
+    height: 700px;
+    margin-top: 100px;
     margin-bottom: 80px;
     filter: drop-shadow(10px 10px 75px black);
 }

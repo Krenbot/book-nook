@@ -41,6 +41,42 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
+  // book animation
+
+  const bookEl = document.querySelectorAll('.card-container')
+
+
+  function animateBook(el, translateY, scale, duration, elasticity) {
+     anime.remove(el)
+    anime({
+      targets: el,
+      translateY: translateY,
+      scale: scale,
+      duration: duration,
+      elasticity: elasticity
+    })
+  }
+
+  function enterButton(el) {
+    animateBook(el, -20, 1.0, 800, 400)
+  };
+  
+  function leaveButton(el) {
+    animateBook(el, 0, 1.0, 600, 300)
+  };
+
+  for (var i = 0; i < bookEl.length; i++) {
+    bookEl[i].addEventListener('mouseenter', function(e) {
+      enterButton(e.target);
+    }, false);
+
+    bookEl[i].addEventListener('mouseleave', function(e) {
+      leaveButton(e.target)
+    }, false);  
+  }
+
+
+
 
 
 
