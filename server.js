@@ -2,7 +2,7 @@ const sequelize = require('./config/connection')
 const express = require('express')
 const session = require("express-session")
 const path = require("path")
-const { Book, Comment, Review, User } = require("./models")
+// const { Book, Comment, Review, User } = require("./models")
 const { engine } = require('express-handlebars')
 const app = express()
 const PORT = process.env.PORT || 3001
@@ -17,7 +17,7 @@ app.use(session({
 }));
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
-app.set('views', './views');
+// app.set('views', './views');
 app.use(controllers);
 
 app.use(express.static(path.join(__dirname, 'public')))
