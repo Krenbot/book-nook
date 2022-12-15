@@ -1,6 +1,58 @@
 const router = require('express').Router();
-const e = require('express')
 const { Comment, Review, Book, User } = require('../../models/');
+const withAuth = require('../../utils/auth');
+
+//CREATE a new book
+router.post('/', withAuth, async (req, res) => {
+    try {
+        const book = await Book.create({
+            ...req.body,
+            user_id: req.session.user_id,
+        })
+        res.json(book)
+    } catch (err) {
+        res.status(500).json(err)
+    }
+});
+
+//DELETE a book
+router.delete('/:id', withAuth, async (req, res) => {
+    try {
+        const book = await Book.destroy({
+            where: {
+                id: req.params.id,
+                user_id: req.session.user_id
+            },
+        });
+
+        if (!book) {
+            res.status(404).json({ message: 'No book found with this id!' });
+            return;
+        }
+        res.status(200).json(book);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+//UPDATE a book
+router.put('/:id', async (req, res) => {
+    try {
+        const book = await Book.update(req.body, {
+            where: {
+                id: req.params.id,
+            },
+        });
+
+        if (!book[0]) {
+            res.status(404).json({ message: 'No BOOK with this ID!' });
+            return;
+        }
+        res.status(200).json(book);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 
 //GET all books
 router.get('/', async (req, res) => {
@@ -30,54 +82,6 @@ router.get('/:id', async (req, res) => {
             },
             include: [{ model: Book }]
         })
-
-        if (!book) {
-            res.status(404).json({ message: 'No BOOK with this ID!' });
-            return;
-        }
-        res.status(200).json(book);
-    } catch (err) {
-        res.status(500).json(err);
-    }
-});
-
-//CREATE a new book
-router.post('/', async (req, res) => {
-    try {
-        const book = await Book.create(req.body)
-        res.json(book)
-    } catch (err) {
-        res.status(500).json(err)
-    }
-});
-
-//UPDATE a book
-router.put('/:id', async (req, res) => {
-    try {
-        const book = await Book.update(req.body, {
-            where: {
-                id: req.params.id,
-            },
-        });
-
-        if (!book[0]) {
-            res.status(404).json({ message: 'No BOOK with this ID!' });
-            return;
-        }
-        res.status(200).json(book);
-    } catch (err) {
-        res.status(500).json(err);
-    }
-});
-
-//DELETE a book
-router.delete('/:id', async (req, res) => {
-    try {
-        const book = await Book.destroy({
-            where: {
-                id: req.params.id,
-            },
-        });
 
         if (!book) {
             res.status(404).json({ message: 'No BOOK with this ID!' });
