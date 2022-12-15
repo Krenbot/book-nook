@@ -17,9 +17,6 @@ app.use(session({
 }));
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
-// app.set('views', './views');
-/////////////// PUT OWN ROUTES AFTER EXPRESS MIDDLEWARE
-//IMPORTS > CONFIG/MIDDLEWARE > ROUTES
 app.use(express.json())
 
 app.use(express.static(path.join(__dirname, 'public')))
@@ -30,46 +27,3 @@ sequelize.sync({ force: false }).then(() => {
         console.log(`server listening @ http://localhost:${PORT}`)
     })
 })
-
-// app.get("/", async (req, res) => {
-//     const books = await Book.findAll()
-
-//     const serializedBooks = books.map((book) => book.get({ plain: true }))
-
-//     res.render("home", { "title": serializedBooks })
-// })
-
-// app.get("/bookview/:id", async (req, res) => {
-//     const selectedBook = await Book.findByPk(req.params.id)
-
-//     if (!selectedBook) {
-//         res.status(404).json({ message: 'No BOOKS found!' });
-//         return;
-//     }
-
-//     const selectedBookReviews = await Review.findAll({
-//         where: {
-//             book_id: selectedBook.id
-//         },
-//     })
-
-//     const serializedReviews = selectedBookReviews.map((review) =>
-//         review.get({ plain: true })
-//     )
-
-//     res.render("individualBook", { "selectedBook": selectedBook.get({ plain: true }), serializedReviews })
-// })
-
-// app.get("/login", (req, res) => {
-//     res.render("login")
-// })
-
-// app.get("/bookview/:id/newReview", async (req, res) => {
-//     const newReviewBook = await Book.findByPk(req.params.id)
-//     res.render("newReview", { title: newReviewBook.title })
-// })
-
-// app.get("/bookview/:id/newReview", async (req, res) => {
-//     const newReviewBook = await Book.findByPk(req.params.id)
-//     res.render("newReview", { title: newReviewBook.title })
-// })
