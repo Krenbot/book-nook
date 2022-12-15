@@ -25,7 +25,6 @@ router.post('/', async (req, res) => {
 // Login
 router.post('/login', async (req, res) => {
     try {
-        console.log(req.body.email)
         const userData = await User.findOne({
             where: {
                 email: req.body.email,
@@ -52,7 +51,6 @@ router.post('/login', async (req, res) => {
         req.session.save(() => {
             req.session.logged_in = true;
             req.session.user_id = userData.dataValues.id
-            console.log(userData.dataValues.id)
             res
                 .status(200)
                 .json({ user: userData, message: 'You are now logged in!' });
