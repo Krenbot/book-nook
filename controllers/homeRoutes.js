@@ -40,14 +40,14 @@ router.get('/book/:id', async (req, res) => {
 });
 
 router.get('/home', withAuth, async (req, res) => {
-  try {
+  console.log(req)
+  console.log(req.session.user_id)
 
+  try {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: User }],
-    });
 
-    console.log(req.session.user_id)
+    });
 
     const user = userData.get({ plain: true });
 
