@@ -7,13 +7,20 @@ newReviewBtn?.addEventListener("click",async(event)=>{
 })
 
 
-//post new review to book
-/*
-newReviewSubmit.addEventListener("submit", async(event)=>{
+newReviewSubmit?.addEventListener("submit", async(event)=>{
     event.preventDefault()
+    const bookTitle = document.getElementById("bookTitle").innerText
     const newReviewTitle = document.getElementById("newReviewTitle").value
     const newReviewContents = document.getElementById("newReviewContents").value
+    fetch("/reviews",{
+        method: "POST",
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({newReviewTitle,newReviewContents,bookTitle})
+    }).then((data)=>
+        window.location.href = "/"
+    )
+})
 
 
-
-})*/
