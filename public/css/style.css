@@ -1,28 +1,281 @@
+/* main page css */
+
+/* book styling*/
 .card-container {
-    background-color: burlywood;
-    margin: 3px;
-    padding: 3px;
-    width: 150px;
-    height: 300px;
+    background-image: radial-gradient( ellipse at top, rgb(70, 23, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://img.freepik.com/free-photo/original-brown-leather-texture-background_24972-1605.jpg?w=1480&t=st=1671001700~exp=1671002300~hmac=999ae93390cc3fcffd9458739ee32a285f335ac3708559c53b8d983059e98ff5');
+    margin: 5px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    width: auto;
+    min-width: 15vw;
+    max-width: 20vw;
+    height: 485px;
     text-align: center; 
     line-height: 30px;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
     border: 2px rgba(0, 0, 0, 0.554) solid;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+/* button styling*/
+.btn {
+    font-family: 'Cinzel Decorative', cursive;
+    max-width: 50vw;
+}
+
+button:active {
+    background-color: rgba(222, 184, 135, 0.75);
+}
+
+.btn-primary {
+    background-color: rgb(25, 70, 0, 0.75);
+    border: none;
+    --bs-btn-active-bg: rgb(25, 70, 0);
+}
+
+.btn-primary:hover {
+    background-color: rgb(25, 70, 0, 0.9);
+}
+
+.btn-danger {
+    background-color: rgba(98, 0, 0, 0.75);
+    border: none;
+    --bs-btn-active-bg: rgba(98, 0, 0);
+}
+
+.btn-danger:hover {
+    background-color: rgba(98, 0, 0, 0.9);
+}
+
+.container-md button {
+    margin: 5px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    width: 150px;
+    height: 485px;
+}
+
+.card-container a {
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(125, 94, 14, 0.90);
+    font-weight: 600;
+    display: block;
+    height: 460px;
+    padding-top: 50%;
+    border-top: 2px solid rgb(125, 94, 14, 0.90);
+    border-bottom: 2px solid rgb(125, 94, 14, 0.90);
+    border-radius: 5px;
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* shelf bg */
+.container-md {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(https://img.freepik.com/free-vector/wooden-wall-floor-with-aged-surface-realistic_107791-682.jpg?w=996&t=st=1670898645~exp=1670899245~hmac=cf6f9a7e36bcd00cb2c54697d898e9c5e4711d44b68c8d69993d6017e635dce4);
+    background-position: bottom center;
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    bottom: 0;
     
 }
 
-.card-container:hover {
-    box-shadow: 0 0.5rem 3rem -0.5rem rgba(0, 0, 0, 0.4);
-    z-index: 10;
-    margin-top: -15px;
-    transform: scale(1.03, 1.03);
+/* shelf heading */
+.card-title {
+    text-align: center;
+    font-family: 'Carattere', cursive;
+    font-size: 60px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-image: url(https://img.freepik.com/free-photo/grungy-beige-marble-textured-background_53876-124564.jpg?w=1480&t=st=1670998980~exp=1670999580~hmac=a2263043a9bb86c42db39bd26601d87b4033fc7eeced8f1d51dba0ddcb4a24b1);
+    opacity: 0.75;
+    border: 3px silver solid;
+    background-position: bottom center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 90%;
+
+
+
+
+}
+/* dark wood bg */
+.card {
+    background-image: url(https://img.freepik.com/free-photo/brown-wooden-textured-flooring-background_53876-101851.jpg?w=1480&t=st=1671000142~exp=1671000742~hmac=d6191731a21e47b3055066fb817553f297b498a22de99f3826a6445365db477e);
+    filter: drop-shadow(10px 10px 10px black);
 }
 
-.container-md {
+.card-container a {
+    justify-content: center;
+}
+
+/* navbar styling */
+.navbar {
+    background-image: url(https://img.freepik.com/premium-photo/texture-old-leather_141856-489.jpg?w=2000);
+    background-position: center center;
+    height: 15vh;
+    border-top: 5px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+    color: #402d2d;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 900;
+    transition: box-shadow background-color 1s ;
+    border: 3px #402d2d65 solid;
+    border-radius: 7px;
+    padding: 1.5vh;
+
+}
+
+.nav-link:hover {
+    background-color: #2d2d2d55;
+    color: rgba(214, 193, 165, 0.654);
+
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-weight: 900;
+    color: #402d2d;
+    padding-top: 0px;
+    border: none;
+    
+}
+
+.navbar-brand:hover {
+    color: #362626;
+    box-shadow: 10px black;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-photo/vintage-grungy-textured-paper-background_53876-103932.jpg?w=2000);
+}
+
+
+
+/* logo css */
+.splash{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title {
+    position: relative;
+    font-weight: 300;
+    font-size: 10vw;
+    color: #402d2d;
+    justify-content: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 500;
+    
+  }
+  
+  .title .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  .title .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #402d2d;
+    transform-origin: 0.5 0;
+  }
+  
+  .title .symbol {
+    font-family: 'Carattere', cursive;
+    font-style: bold;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .title .letters {
+    display: inline-block;
+    opacity: 0;
+  }
+
+
+  /* book view css */
+
+  /* cover styling */
+.cover-image {
     display: flex;
+    justify-content: space-around;
+    height: 700px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    filter: drop-shadow(10px 10px 75px black);
 }
 
+.cover-bg {
+    background-image: url(https://img.freepik.com/free-photo/cracked-wood-with-dark-background_1219-13.jpg?1&w=1480&t=st=1670997403~exp=1670998003~hmac=5852bf0e70d50582bdcc7bcbf61786ca85305cfbcaa91abdac8f43c781801c87);
+    filter: drop-shadow(10px 10px 20px black);
+}
 
+/* comments styling */
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(10px 10px 10px black);
+    align-items: center;
 
+}
 
+.comments-heading {
+    margin: 25px;
+    width: 200px;
+}
+
+.comments-card {
+    width: 75vw;
+}
+
+form {
+    font-family: 'Cinzel Decorative', cursive;;
+}
+
+.heading {
+   font-family: 'Carattere', cursive;
+   font-size: 80px;
+   text-align: center;
+   margin-top: 30px;
+}
+
+.reviews-container {
+    color: rgba(222, 184, 135, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.reviews-container h2 {
+    filter: drop-shadow(5px 5px 10px rgba(222, 184, 135, 0.5));
+}
