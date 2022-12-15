@@ -1,6 +1,11 @@
 const router = require('express').Router();
+const { response } = require('express');
 const { Book, Comment, Review, User } = require('../models')
 const withAuth = require('../utils/auth');
+
+router.get('/', (req, res) => {
+  res.redirect('/login')
+})
 
 router.get('/book/:id', async (req, res) => {
   try {
@@ -45,8 +50,7 @@ router.get('/home', withAuth, async (req, res) => {
 
   try {
     const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-
+      attributes: { exclude: ['password'] }
     });
 
     const user = userData.get({ plain: true });
