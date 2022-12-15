@@ -1,7 +1,10 @@
-# **Book Nook** - A Virtual Bookshelf For the Modern Era
+# -**Book||Nook**- <br> A Virtual Bookshelf For the Modern Era
 
 ## Description
 
+A bibliophile's dream app that lets users create and maintain a virtual bookshelf. Add books paired with critical reviews and user comments to get the most out of your social reading experience. Users can sign up to maintain their own personal shareable library to track the books they're currently reading, want to read, and have read.
+
+Share your personal takes on both the contemporary and classics only with **__Book||Nook__**!
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,10 +16,25 @@
 
 ## Installation
 
-
+BookNook can be found deployed on Heroku at the following link: </br>
+=> [Book||Nook](https://github.com/Krenbot/book-nook) <= 
 
 ## Usage
 
+Within the app, you are able to add books you've read, read popular reviews, and add your own comments.
+
+Visiting the site for the first time allows users to login or sign up.
+![login](./assets/login.png)
+
+This page is your personal shelf of books.
+![main page](./assets/main-page.png)
+![shelf page](./assets/shelf-page.png)
+
+Clicking on a book reveals it's reviews, title, author, ISBN #, number of pages, and comments.
+![book page](./assets/book-page.png)
+
+The user can read critical reviews and place their own comments
+![main page](./assets/reviews-comments.png)
 
 ## Badges
 
@@ -25,14 +43,17 @@
 ![MIT](https://img.shields.io/badge/license-MIT-green)
 
 ## Features
-
-- XXXX
-    - xxxx
-    
+- Adding/Deleting Books
+    - Create your own virtual bookshelf to share with others.
 <br>
-
-- XXXX
-    - xxxx
+- Commenting
+    - Add notes/ideas/quotes, etc to save for your reference or share with friends.
+<br>
+- Reviews
+    - Browse popular reviews or add your own!
+<br>
+- Social
+    - Customize your own shelf and link up with friends to talk about what you've read/want to read/have read.
 
 ## Credits
 [@Pharos19](https://github.com/Pharos19) - Alan Martinez<br>
