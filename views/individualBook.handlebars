@@ -4,33 +4,33 @@
   <div class="card cover-bg" style="width: auto">
     <div class="shelf-container card-body" style="">
       <div class="container cover-image">
-        <img src="https://covers.openlibrary.org/b/isbn/{{selectedBook.isbn}}-M.jpg" />
+        <img src="https://covers.openlibrary.org/b/isbn/{{isbn}}-M.jpg" />
       </div>
-      <hr/>
+      <hr />
       <div class="container">
-        <h5 class="card-title">{{selectedBook.title}}</h5>
+        <h5 class="card-title">{{title}}</h5>
 
-      <h6 class="card-subtitle mb-2 text-muted">Author: {{selectedBook.author}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Author: {{author}}</h6>
 
-      <h7 class="card-subtitle mb-2 text-muted">ISBN: {{selectedBook.isbn}}</h6><br>
-        <h7 class="card-subtitle mb-2 text-muted">Pages: {{selectedBook.pages}}</h6>
+        <h7 class="card-subtitle mb-2 text-muted">ISBN: {{isbn}}</h6><br>
+          <h7 class="card-subtitle mb-2 text-muted">Pages: {{pages}}</h6>
       </div>
     </div>
     <hr />
     <div class="reviews-container container" style="display:flex;">
       <div class="container">
-      <h2>Reviews</h2>
+        <h2>Reviews</h2>
       </div>
       <div class="reviews-container container" style="padding-bottom:10px;">
-         <button type="button" class="btn btn-primary" id="newReview">New Review</button>
+        <button type="button" class="btn btn-primary" id="newReview">New Review</button>
       </div>
     </div>
     <div class="card" style="width:auto">
       <div class="card-body">
-        <h5 class="card-title">{{selectedBook.title}}</h5>
+        <h5 class="card-title">{{title}}</h5>
         {{#each serializedReviews}}
         <h6 class="card-subtitle mb-2 text-muted" style="font-size: small;">{{body}}</h6>
-        <hr/>
+        <hr />
         {{/each}}
       </div>
     </div>

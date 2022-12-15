@@ -3,60 +3,70 @@
         "title": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "isbn": "0743273567",
-        "pages": 180
+        "pages": 180,
+        "user_id": 1
     },
     {
         "title": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "isbn": "9780060933272",
-        "pages": 336
+        "pages": 336,
+        "user_id": 1
     },
     {
         "title": "Lord of the Flies",
         "author": "William Golding",
         "isbn": "9780399501487",
-        "pages": 182
+        "pages": 182,
+        "user_id": 1
     },
     {
         "title": "Of Mice and Men",
         "author": "John Steinbeck",
         "isbn": "9780141185101",
-        "pages": 112
+        "pages": 112,
+        "user_id": 1
     },
     {
         "title": "Animal Farm",
         "author": "George Orwell",
         "isbn": "9788129116123",
-        "pages": 141
+        "pages": 141,
+        "user_id": 1
     },
     {
         "title": "The Odyssey",
         "author": "Homer",
         "isbn": "9780140268867",
-        "pages": 541
+        "pages": 541,
+        "user_id": 1
     },
     {
         "title": "The Adventures of Huckleberry Finn",
         "author": "Mark Twain",
         "isbn": "1580495834",
-        "pages": 327
+        "pages": 327,
+        "user_id": 1
     },
     {
         "title": "Frankenstein",
         "author": "Mary Wollstonecraft Shelley",
         "isbn": "9780486282114",
-        "pages": 260
+        "pages": 260,
+        "user_id": 1
     },
     {
         "title": "Brave New World",
         "author": "Aldous Huxley",
         "isbn": "9781602833364",
-        "pages": 268
+        "pages": 268,
+        "user_id": 1
     },
     {
         "title": "Jane Eyre",
         "author": "Charlotte Brontë",
         "isbn": "9783821853963",
-        "pages": 532
+        "pages": 532,
+        "user_id": 1
     }
 ]

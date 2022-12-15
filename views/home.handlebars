@@ -1,4 +1,3 @@
-
 {{!-- TODO: IF LOGGED IN SHOW SHELF, OTHERWISE SHOW LOGIN --}}
 <div class="container">
 
@@ -21,9 +20,9 @@
             <div class="card" style="width: auto;">
                 <h5 class="card-title">Your Shelf</h5>
                 <div class="container-md" style="flex-box">
-                    {{#each title}}
+                    {{#each books}}
                     <div class="book card-container">
-                        <a href="/bookview/{{this.id}}">{{this.title}}</a>
+                        <a href="/book/{{this.id}}">{{this.title}}</a>
                     </div>
 
                     {{/each}}
@@ -49,4 +48,3 @@
     </div>
     <hr />
 </div>
-

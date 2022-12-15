@@ -12,15 +12,15 @@ const seedDatabase = async () => {
     await User.bulkCreate(userData, {
         individualHooks: true,
     });
+    console.log('\n----- USERS SEEDED -----\n');
     await Book.bulkCreate(bookData);
+    console.log('\n----- BOOKS SEEDED -----\n');
     await Review.bulkCreate(reviewData);
+    console.log('\n----- REVIEWS SEEDED -----\n');
     await Comment.bulkCreate(commentData);
+    console.log('\n----- COMMENTS SEEDED -----\n');
 
     console.log('\n----- DATABASE SYNCED -----\n');
-    console.log('\n----- USERS SEEDED -----\n');
-    console.log('\n----- BOOKS SEEDED -----\n');
-    console.log('\n----- REVIEWS SEEDED -----\n');
-    console.log('\n----- COMMENTS SEEDED -----\n');
 
     process.exit(0);
 }

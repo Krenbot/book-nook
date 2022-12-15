@@ -16,25 +16,33 @@ User.hasMany(Comment, {
     foreignKey: 'user_id'
 })
 
-Book.hasOne(User, {
-    foreignKey: 'user_id',
+Book.hasMany(User, {
+    foreignKey: 'book_id',
     onDelete: 'CASCADE'
 })
 
 Book.hasMany(Comment, {
-    foreignKey: 'user_id'
+    foreignKey: 'book_id'
 })
 
 Book.hasMany(Review, {
-    foreignKey: 'user_id'
+    foreignKey: 'book_id'
 })
 
 Review.belongsTo(Book, {
-    foreignKey: 'book_id'
+    foreignKey: 'review_id'
+})
+
+Review.belongsTo(User, {
+    foreignKey: 'user_id'
 })
 
 Comment.belongsTo(Book, {
-    foreignKey: 'book_id'
+    foreignKey: 'comment_id'
+})
+
+Comment.belongsTo(User, {
+    foreignKey: 'user_id'
 })
 
 module.exports = {
