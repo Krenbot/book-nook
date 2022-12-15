@@ -263,6 +263,10 @@ form {
     font-family: 'Cinzel Decorative', cursive;;
 }
 
+input {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .heading {
    font-family: 'Carattere', cursive;
    font-size: 80px;
