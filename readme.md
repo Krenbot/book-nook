@@ -1,130 +1,206 @@
-Interactive Full-Stack Project
-Projects play a key role in your journey to becoming a full-stack web developer. As you enter the last phase of the boot camp, you’ll begin to apply for development jobs. If you want to land interviews, your portfolio must feature high-quality deployed examples of your work—and you can use your finished projects for that very purpose.
+# **Book Nook** - A Virtual Bookshelf For the Modern Era
 
-As your first opportunity to show employers your collaborative skills and coding abilities, this particular project will be a focal point of your portfolio. Employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job. That’s why one of the requirements for this project is that you add it to your portfolio.
+## Description
 
-Project Requirements
-You and your group will use everything you’ve learned over the past six weeks to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
 
-Use Node.js and Express.js to create a RESTful API.
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Badges](#badges)
+- [Features](#features)
+- [Credits](#credits)
+- [License](#license)
 
-Use Handlebars.js as the templating engine.
+## Installation
 
-Use MySQL and the Sequelize ORM for the database.
 
-Have both GET and POST routes for retrieving and adding new data.
 
-Be deployed using Heroku (with data).
+## Usage
 
-Use at least one new library, package, or technology that we haven’t discussed.
 
-Have a polished UI.
+## Badges
 
-Be responsive.
+![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+![MIT](https://img.shields.io/badge/license-MIT-green)
 
-Be interactive (i.e., accept and respond to user input).
+## Features
 
-Have a folder structure that meets the MVC paradigm.
+- XXXX
+    - xxxx
+    
+<br>
 
-Include authentication (express-session and cookies).
+- XXXX
+    - xxxx
 
-Protect API keys and sensitive information with environment variables.
+## Credits
+[@Pharos19](https://github.com/Pharos19) - Alan Martinez<br>
+[@Krenbot](https://github.com/Krenbot) - Steven Krenn<br>
+[@JeremyBukofzer](https://github.com/JeremyBukofzer) - Jeremy Bukofzer<br>
+[@OilPainter1](https://github.com/OilPainter1) - Henry Cryns<br>
+[@kevinkraiss](https://github.com/kevinkraiss) - Kevin Kraiss
 
-Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+[anime.js](https://animejs.com/)<br>
+[Handlebars.js](https://bulma.io/)<br>
 
-Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+___
+## License
 
-Finally, you must add your project to the portfolio that you created in Module 2.
+MIT License
 
-Presentation Requirements
-Use this Project Presentation Template Links to an external site.to address the following:
+Copyright (c) 2022<br>
+Steven Krenn/Kevin Kraiss/Jeremy Bukofzer/Alan Martinez
 
-Elevator pitch: A one-minute description of your application.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Concept: What is your user story? What was your motivation for development?
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+___
+## How to Contribute
 
-Demo: Show your stuff!
+### Contributor Covenant Code of Conduct
 
-Directions for future development.
+#### Our Pledge
 
-Links to the deployed application and the GitHub repository.
+We as members, contributors, and leaders pledge to make participation in our
+community a harassment-free experience for everyone, regardless of age, body
+size, visible or invisible disability, ethnicity, sex characteristics, gender
+identity and expression, level of experience, education, socio-economic status,
+nationality, personal appearance, race, caste, color, religion, or sexual
+identity and orientation.
 
-Grading Requirements
-This project is graded based on the following criteria:
+We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community.
 
-NOTE
-If a project submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
+#### Our Standards
 
-A repository that has no code
+Examples of behavior that contributes to a positive environment for our
+community include:
 
-A repository that includes a unique name but nothing else
+* Demonstrating empathy and kindness toward other people
+* Being respectful of differing opinions, viewpoints, and experiences
+* Giving and gracefully accepting constructive feedback
+* Accepting responsibility and apologizing to those affected by our mistakes,
+  and learning from the experience
+* Focusing on what is best not just for us as individuals, but for the overall
+  community
 
-A repository that includes only a README file but nothing else
+Examples of unacceptable behavior include:
 
-A repository that only includes starter code
+* The use of sexualized language or imagery, and sexual attention or advances of
+  any kind
+* Trolling, insulting or derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others' private information, such as a physical or email address,
+  without their explicit permission
+* Other conduct which could reasonably be considered inappropriate in a
+  professional setting
 
-Technical Acceptance Criteria: 25%
-Satisfies the following code requirements:
+#### Enforcement Responsibilities
 
-Application uses a Node and Express back end and uses both GET and POST routes for retrieving and adding new data.
+Community leaders are responsible for clarifying and enforcing our standards of
+acceptable behavior and will take appropriate and fair corrective action in
+response to any behavior that they deem inappropriate, threatening, offensive,
+or harmful.
 
-Application has a folder structure that meets the MVC paradigm and uses Handlebars.js as the template engine.
+Community leaders have the right and responsibility to remove, edit, or reject
+comments, commits, code, wiki edits, issues, and other contributions that are
+not aligned to this Code of Conduct, and will communicate reasons for moderation
+decisions when appropriate.
 
-Application is backed by a MySQL database with a Sequelize ORM and protects API keys and sensitive information with environment variables.
+#### Scope
 
-Application includes user authentication (express-session and cookies).
+This Code of Conduct applies within all community spaces, and also applies when
+an individual is officially representing the community in public spaces.
+Examples of representing our community include using an official e-mail address,
+posting via an official social media account, or acting as an appointed
+representative at an online or offline event.
 
-Application uses at least one new library, package, or technology not covered in class.
+### Enforcement
 
-Concept 10%
-Application should be a unique and novel idea.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported to the community leaders responsible for enforcement at
+[INSERT CONTACT METHOD].
+All complaints will be reviewed and investigated promptly and fairly.
 
-Your group should clearly and concisely articulate your project idea.
+All community leaders are obligated to respect the privacy and security of the
+reporter of any incident.
 
-Deployment: 20%
-Application deployed at live URL on Heroku and loads with no errors.
+### Enforcement Guidelines
 
-Application GitHub URL submitted.
+Community leaders will follow these Community Impact Guidelines in determining
+the consequences for any action they deem in violation of this Code of Conduct:
 
-Portfolio at live URL submitted, featuring project.
+### 1. Correction
 
-Repository Quality: 10%
-Repository has a unique name.
+**Community Impact**: Use of inappropriate language or other behavior deemed
+unprofessional or unwelcome in the community.
 
-Repository follows best practices for file structure and naming conventions.
+**Consequence**: A private, written warning from community leaders, providing
+clarity around the nature of the violation and an explanation of why the
+behavior was inappropriate. A public apology may be requested.
 
-Repository follows best practices for class/id-naming conventions, indentation, quality comments, etc.
+### 2. Warning
 
-Repository contains multiple descriptive commit messages.
+**Community Impact**: A violation through a single incident or series of
+actions.
 
-Repository contains a quality README file with description, screenshot, and link to deployed application.
+**Consequence**: A warning with consequences for continued behavior. No
+interaction with the people involved, including unsolicited interaction with
+those enforcing the Code of Conduct, for a specified period of time. This
+includes avoiding interactions in community spaces as well as external channels
+like social media. Violating these terms may lead to a temporary or permanent
+ban.
 
-Application Quality: 15%
-Application user experience is intuitive and easy to navigate.
+### 3. Temporary Ban
 
-Application user interface style is clean and polished.
+**Community Impact**: A serious violation of community standards, including
+sustained inappropriate behavior.
 
-Application is responsive.
+**Consequence**: A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
+Violating these terms may lead to a permanent ban.
 
-Presentation 10%
-Your group should present using Powerpoint or a similar presentation software.
+### 4. Permanent Ban
 
-Every group member should speak during the presentation.
+**Community Impact**: Demonstrating a pattern of violation of community
+standards, including sustained inappropriate behavior, harassment of an
+individual, or aggression toward or disparagement of classes of individuals.
 
-Your presentation should follow the Project Presentation Template Links to an external site..
+**Consequence**: A permanent ban from any sort of public interaction within the
+community.
 
-Collaboration 10%
-There are no major disparities in the number of GitHub contributions between group members.
-How to Submit Your Interactive Full-Stack Project
-Each member of your group is required to submit the following for review:
+## Attribution
 
-The URL of the deployed application.
+This Code of Conduct is adapted from the [Contributor Covenant][homepage],
+version 2.1, available at
+[https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1].
 
-The URL of the GitHub repository, with a unique name and a README describing the project.
+Community Impact Guidelines were inspired by
+[Mozilla's code of conduct enforcement ladder][Mozilla CoC].
 
-The URL of your portfolio, with your project added to it.
+For answers to common questions about this code of conduct, see the FAQ at
+[https://www.contributor-covenant.org/faq][FAQ]. Translations are available at
+[https://www.contributor-covenant.org/translations][translations].
 
-NOTE
-You are NOT allowed to skip this assignment. Project assignments are required.
+[homepage]: https://www.contributor-covenant.org
+[v2.1]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
+[Mozilla CoC]: https://github.com/mozilla/diversity
+[FAQ]: https://www.contributor-covenant.org/faq
+[translations]: https://www.contributor-covenant.org/translations

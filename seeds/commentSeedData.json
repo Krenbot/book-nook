@@ -1,42 +1,47 @@
 [
     {
         "title": "TGG",
-        "body": " TGG Test comment"
+        "body": " TGG Test comment",
+        "user_id": 1
     },
     {
         "title": "TKAM",
-        "body": "TKAM test comment"
+        "body": "TKAM test comment",
+        "user_id": 1
     },
     {
         "title": "LOTF",
-        "body": "LOTF test comment"
+        "body": "LOTF test comment",
+        "user_id": 1
     },
     {
         "title": "OM&M",
-        "body": "OM&M test comment"
+        "body": "OM&M test comment",
+        "user_id": 1
     },
     {
         "title": "Animal Farm",
-        "body": "Animal Farm test comment"
+        "body": "Animal Farm test comment",
+        "user_id": 1
     },
     {
         "title": "Huck Finn",
-        "body": "Huck Finn test comment"
+        "body": "Huck Finn test comment",
+        "user_id": 1
     },
     {
         "title": "Frankenstien",
-        "body": "Frankenstien test comment"
+        "body": "Frankenstien test comment",
+        "user_id": 1
     },
     {
         "title": "Brave New World",
-        "body": "BNW Test coment"
+        "body": "BNW Test coment",
+        "user_id": 1
     },
     {
         "title": "Jane Eyer",
-        "body": "Jane eyer test comment"
-    },
-    {
-        "title": "",
-        "body": ""
+        "body": "Jane eyer test comment",
+        "user_id": 1
     }
 ]
