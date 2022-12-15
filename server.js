@@ -48,6 +48,24 @@ app.get("/bookview/:id/newReview", async(req,res)=>{
     res.render("newReview",{title: newReviewBook.title})
 })
 
+app.post('/reviews', async (req, res) => {
+    console.log(req.body)
+    try {
+        const reviewBookId= await Book.findOne({
+            where: {
+                title: req.body.bookTitle
+            }
+        })
+        const review = await Review.create({
+            body: req.body.newReviewContents,
+            book_id: reviewBookId.id
+        })
+        res.json(review)
+    } catch (err) {
+        res.status(500).json(err)
+    }
+});
+
 
 sequelize.sync({ force: false}).then(() => {
     app.listen(PORT, () => {
