@@ -1,31 +1,31 @@
 <div style="padding-top:10px;">
 </div>
-<div class="container" style="display:flex">
-  <div class="card bg-light" style="width: 60rem">
-    <div class="card-body" style="">
-      <div class="container">
+<div class="container" style="display:block">
+  <div class="card cover-bg" style="width: auto">
+    <div class="shelf-container card-body" style="">
+      <div class="container cover-image">
         <img src="https://covers.openlibrary.org/b/isbn/{{selectedBook.isbn}}-M.jpg" />
       </div>
       <hr/>
       <div class="container">
         <h5 class="card-title">{{selectedBook.title}}</h5>
 
-      <h6 class="card-subtitle mb-2 text-muted">{{selectedBook.author}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Author: {{selectedBook.author}}</h6>
 
       <h7 class="card-subtitle mb-2 text-muted">ISBN: {{selectedBook.isbn}}</h6><br>
         <h7 class="card-subtitle mb-2 text-muted">Pages: {{selectedBook.pages}}</h6>
       </div>
     </div>
     <hr />
-    <div class="container" style="display:flex;">
+    <div class="reviews-container container" style="display:flex;">
       <div class="container">
-      Reviews
+      <h2>Reviews</h2>
       </div>
-      <div class="container" style="padding-bottom:10px;">
+      <div class="reviews-container container" style="padding-bottom:10px;">
          <button type="button" class="btn btn-primary" id="newReview">New Review</button>
       </div>
     </div>
-    <div class="card bg-light" style="width:auto">
+    <div class="card" style="width:auto">
       <div class="card-body">
         <h5 class="card-title">{{selectedBook.title}}</h5>
         {{#each serializedReviews}}
@@ -34,12 +34,12 @@
       </div>
     </div>
   </div>
-  <div class="container" style="margin-left:30px;">
-    <div>
-      Comments
+  <div class="comments-container container">
+    <div class="comments-heading">
+      <h2>Comments</h2>
     </div>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
+    <div class="card" style="width: auto;">
+      <div class="comments-card card-body">
         <h5 class="card-title">Comment Title</h5>
         <p class="card-text">Comment Content</p>
       </div>
