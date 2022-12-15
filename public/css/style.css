@@ -8,7 +8,7 @@
     margin-top: 15px;
     width: auto;
     min-width: 15vw;
-    max-width: 20vw;
+    max-width: 16vw;
     height: 485px;
     text-align: center; 
     line-height: 30px;
@@ -54,6 +54,11 @@ button:active {
     margin-top: 15px;
     width: 150px;
     height: 485px;
+}
+
+#newComment {
+    margin: 20px;
+
 }
 
 /* link styling */
@@ -235,16 +240,14 @@ body {
 
 .cover-bg {
     background-image: url(https://img.freepik.com/free-photo/cracked-wood-with-dark-background_1219-13.jpg?1&w=1480&t=st=1670997403~exp=1670998003~hmac=5852bf0e70d50582bdcc7bcbf61786ca85305cfbcaa91abdac8f43c781801c87);
-    filter: drop-shadow(10px 10px 20px black);
 }
 
 /* comments styling */
 .comments-container {
     display: flex;
     flex-direction: column;
-    filter: drop-shadow(10px 10px 10px black);
     align-items: center;
-
+    margin-bottom: 10px;
 }
 
 .comments-heading {
@@ -258,6 +261,10 @@ body {
 
 form {
     font-family: 'Cinzel Decorative', cursive;;
+}
+
+input {
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .heading {
