@@ -292,3 +292,9 @@ input {
     border-top: 3px rgba(192, 192, 192, 0.75) solid;
     border-bottom: 3px rgba(192, 192, 192, 0.75) solid;
 }
+
+@media only screen and (max-width: 425px) {
+    .card-container {
+        writing-mode: vertical-lr;
+    }
+  }

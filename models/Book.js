@@ -25,7 +25,7 @@ Book.init(
         },
         pages: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
         },
     }, {
     sequelize,

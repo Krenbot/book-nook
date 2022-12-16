@@ -77,4 +77,4 @@ anime.timeline({loop: true})
   }
 
 
-module.exports = userAnime
+// module.exports = userAnime
