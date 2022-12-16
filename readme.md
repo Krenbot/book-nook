@@ -17,7 +17,7 @@ Share your personal takes on both the contemporary and classics only with **__Bo
 ## Installation
 
 BookNook can be found deployed on Heroku at the following link: </br>
-=> [Book||Nook](https://github.com/Krenbot/book-nook) <= 
+=> [Book||Nook](https://book-nook.herokuapp.com/login) <= 
 
 ## Usage
 
